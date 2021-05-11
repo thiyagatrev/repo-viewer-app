@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail"
+    app:startDestination="@id/detailFragment2">
+
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.example.repoviewer.views.fragment.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment2_to_dummy1"
+            app:destination="@id/dummy1" />
+    </fragment>
+    <fragment
+        android:id="@+id/dummy1"
+        android:name="com.example.repoviewer.views.fragment.detail.Dummy1"
+        android:label="fragment_dummy1"
+        tools:layout="@layout/fragment_dummy1" />
+</navigation>

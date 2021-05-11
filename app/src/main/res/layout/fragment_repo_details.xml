@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RepoDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mimg_owner_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_dummy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Name :"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="@dimen/msize_title"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/mimg_owner_image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="profile name"
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintBottom_toBottomOf="@+id/mtxt_dummy_name"
+            app:layout_constraintStart_toEndOf="@+id/mtxt_dummy_name"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/mtxt_dummy_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_dummy_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Description:"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="@dimen/msize_title"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/mtxt_dummy_name" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="start"
+            android:lines="3"
+            android:maxWidth="200dp"
+            android:minLines="3"
+            android:text="lkgj sdfg;lkjsdfg asdlgkjasd asdglkja  asdgkjlasdklsadlkfj saldkfj  aslkdfj a;slkdf a lksdfja klsfd "
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintRight_toRightOf="@+id/guideline7"
+            app:layout_constraintStart_toEndOf="@+id/mtxt_dummy_description"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/mtxt_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_dummy_fork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Fork:"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="@dimen/msize_title"
+            app:layout_constraintBottom_toBottomOf="@+id/mtxt_fork"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@id/mtxt_fork" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_fork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Fork "
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintStart_toEndOf="@+id/mtxt_dummy_fork"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/mtxt_description" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_dummy_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="IsAdmin:"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="@dimen/msize_title"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/mtxt_dummy_fork" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="yes "
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintBottom_toBottomOf="@+id/mtxt_dummy_admin"
+            app:layout_constraintStart_toEndOf="@+id/mtxt_dummy_admin"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/mtxt_dummy_admin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:name="com.thiyaga.githubexplorer.dummyFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintDimensionRatio="3:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtxt_admin"
+            tools:context=".views.fragment.home.RepoDetails"
+            tools:listitem="@layout/repo_comment_item" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtxt_empty_view"
+            android:name="com.thiyaga.githubexplorer.dummyFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/no_adapter_message"
+            android:textAppearance="@style/Base.TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintDimensionRatio="3:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtxt_admin" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:enabled="true"
+            android:hint="@string/user_comment"
+            app:layout_constraintDimensionRatio="5:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/medit_user_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbtn_save_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save"
+            app:layout_constraintTop_toBottomOf="@id/textField" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

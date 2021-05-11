@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment"
+    app:startDestination="@id/commentFragment2">
+
+    <fragment
+        android:id="@+id/commentFragment2"
+        android:name="com.example.repoviewer.views.fragment.comment.CommentFragment"
+        android:label="CommentFragment"
+        tools:layout="@layout/fragment_comment">
+        <action
+            android:id="@+id/action_commentFragment2_to_dummy2"
+            app:destination="@id/dummy2" />
+    </fragment>
+    <fragment
+        android:id="@+id/dummy2"
+        android:name="com.example.repoviewer.views.fragment.comment.Dummy2"
+        android:label="fragment_dummy2"
+        tools:layout="@layout/fragment_dummy2" />
+</navigation>
