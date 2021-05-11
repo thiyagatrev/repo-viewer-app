@@ -2,7 +2,8 @@
 this app is sample to fetch public repo from gihub and show in the list and allow users to comment for each repo which will be stored in the local database
 
 
-List of library used
+List of library used:
+
     1.AndroidSupport libs
     2.FacebookDebugger stetho
     3.Glide
